@@ -90,6 +90,7 @@
 #include "bitmaps/WS_Bitmaps800x600.h" // 6.0"  grey
 // 4-color
 #include "bitmaps/Bitmaps4c184x360.h" // 2.66" 4-color
+#include "bitmaps/Bitmaps4c128x296.h" // 2.9" 4-color
 #include "bitmaps/Bitmaps4c168x384.h" // 2.9" 4-color
 #include "bitmaps/WS_Bitmaps4c168x168.h" // 4.37" 4-color
 #include "bitmaps/WS_Bitmaps4c168x400.h" // 3.00" 4-color
@@ -876,6 +877,9 @@ void drawBitmaps()
 #endif
 #if defined(_WS_Bitmaps4c168x168_H_)
   drawBitmaps4c168x168();
+#endif
+#if defined(_GxBitmaps4c128x296_H_)
+  drawBitmaps4c128x296();
 #endif
 #if defined(_GxBitmaps4c168x384_H_)
   drawBitmaps4c168x384();
@@ -1897,6 +1901,17 @@ void drawBitmaps4c168x400()
   if (display.epd2.panel == GxEPD2::Waveshare3inch4color)
   {
     display.drawNative(WS_Bitmap4c168x400, 0, (display.epd2.WIDTH - 168) / 2, (display.epd2.HEIGHT - 400) / 2, 168, 400, false, false, true);
+    delay(5000);
+  }
+}
+#endif
+
+#if defined(_GxBitmaps4c128x296_H_)
+void drawBitmaps4c128x296()
+{
+  if (display.epd2.panel == GxEPD2::GDEY029F51)
+  {
+    display.drawNative(Bitmap4c128x296, 0, (display.epd2.WIDTH - 128) / 2, (display.epd2.HEIGHT - 296) / 2, 128, 296, false, false, true);
     delay(5000);
   }
 }

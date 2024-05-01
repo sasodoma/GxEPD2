@@ -1,4 +1,8 @@
 # GxEPD2
+## Modified to include support for GDEY029F51
+GDEY029F51 is a 2.9" 4-color 128x296 display from good-display.
+It can be found on the MH-ET LIVE® 2.9 Inch E-paper Module
+
 ## Arduino Display Library for SPI E-Paper Displays
 
 - With full Graphics and Text support using Adafruit_GFX
@@ -104,6 +108,7 @@
 - GDEM029C90     2.9" b/w/y 128x296, SSD1680
 - DEPG0290BS     2.9" b/w 128x296, SSD1680, e.g. LILYGO® TTGO T5 V2.4.1 2.9"
 - GDEY029T94     2.9" b/w 128x296, SSD1680
+- GDEY029F51    2.9" 4-color 128x296, JD79661, e.g. MH-ET LIVE® 2.9 Inch E-paper Module
 - GDEY029F51H    2.9" 4-color 168x384, JD79667
 - Waveshare3inch4color 3.0" 4-color 168x400
 - GDEQ031T10     3.1" b/w 240x320, UC8253
